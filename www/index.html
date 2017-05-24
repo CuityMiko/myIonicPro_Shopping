@@ -31,9 +31,32 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
+    <!--全局功能模块-->
     <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/services.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/routes.js"></script>
+    <!--<script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>-->
+    <!--子功能模块-->
+    <!--tab功能模块-->
+    <script src="areas/tab/route.js"></script>
+    <!--tab->dash子功能模块-->
+    <script src="areas/tab/dash/service.js"></script>
+    <script src="areas/tab/dash/controller.js"></script>
+    <script src="areas/tab/dash/route.js"></script>
+    <!--tab->account子功能模块-->
+    <script src="areas/tab/account/service.js"></script>
+    <script src="areas/tab/account/controller.js"></script>
+    <script src="areas/tab/account/route.js"></script>
+    <!--tab->chats子功能模块-->
+    <script src="areas/tab/chats/service.js"></script>
+    <script src="areas/tab/chats/controller.js"></script>
+    <script src="areas/tab/chats/route.js"></script>
+    <!--tab->chats->detail子功能模块-->
+    <script src="areas/tab/chats/detail/service.js"></script>
+    <script src="areas/tab/chats/detail/controller.js"></script>
+    <script src="areas/tab/chats/detail/route.js"></script>
   </head>
   <body ng-app="starter">
     <!--
