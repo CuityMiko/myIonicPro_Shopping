@@ -10,11 +10,13 @@ angular.module('starter.controller.guidepage',['starter.service.guidepage'])
       autoplay:3000, //自动切换间隔时间
       // 如果需要分页器
       pagination: '.swiper-pagination',
+      // onSlideChangeEnd:function(swiper){ //滑动到下一个页面触发事件
+      //   mySwiper.activeIndex //滑动到第几个页面
+      // }
     })
 
     //开始使用
     $scope.tostart=function(){
-      console.log(1111)
-      $location.path("/tab/dash");
+      $location.path("/tab/home");
     }
   }])

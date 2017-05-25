@@ -1,4 +1,4 @@
 angular.module('starter.service.guidepage',[])
-  .factory('guidepage_data',function(){
+  .factory('guidepageFcty',function(){
     return null;
   })

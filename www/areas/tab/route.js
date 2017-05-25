@@ -3,7 +3,9 @@ angular.module('starter.tab',[
   'starter.route.tab_dash',
   'starter.route.tab_account',
   'starter.route.tab_chats',
-  'starter.route.tab_chats_detail'
+  'starter.route.tab_chats_detail',
+  // 功能实现模块
+  'starter.route.tab_home'
 ])
 .config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider) {
     $stateProvider.state('tab', {
