@@ -4,7 +4,8 @@
 angular.module('starter', ['ionic',
   'starter.config', //配置模块，控制不同平台机器的兼容性
   'starter.global', //全局配置文件
-  'starter.routes' //路由配置模块
+  'starter.routes', //路由配置模块
+  'ionicLazyLoad' //ionic图片延迟加载
 ])
 //cordova相关，启动平台监测
 .run(function($ionicPlatform) {

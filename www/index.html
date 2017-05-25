@@ -30,10 +30,14 @@
     <!--功能模块样式-->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/home/home.css">
+    <link rel="stylesheet" href="css/category/category.css">
 
     <!-- ionic/angularjs js -->
     <!--引入了所有ionic相关的angular文件并打包成了bundle文件-->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!--JQuery-->
+    <script src="lib/jquery/dist/jquery.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -41,6 +45,9 @@
     <!--插件-->
     <!--引导页swiper-->
     <script src="lib/swiper/dist/js/swiper.js"></script>
+
+    <!--图片延迟加载-->
+    <script src="lib/ionic-image-lazy-load/ionic-image-lazy-load.js"></script>
 
     <!-- your app's js -->
     <!--全局功能模块-->
@@ -78,6 +85,10 @@
     <script src="areas/home/service.js"></script>
     <script src="areas/home/controller.js"></script>
     <script src="areas/home/route.js"></script>
+    <!--分类-->
+    <script src="areas/category/service.js"></script>
+    <script src="areas/category/controller.js"></script>
+    <script src="areas/category/route.js"></script>
   </head>
   <body ng-app="starter">
     <!--

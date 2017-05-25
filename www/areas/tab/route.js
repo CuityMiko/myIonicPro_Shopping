@@ -6,7 +6,8 @@ angular.module('starter.tab',[
   'starter.route.tab_chats_detail',
   'starter.controller.tab',
   // 功能实现模块
-  'starter.route.tab_home'
+  'starter.route.tab_home', //首页
+  'starter.route.tab_category' //分类
 ])
 .config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider) {
     $stateProvider.state('tab', {
