@@ -1,3 +1,25 @@
 <ion-view view-title="首页">
-  <h1>首页</h1>
+  <ion-content id="home-content" class="scroll-content" scroll="false">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" ng-repeat="item in HeaderSlideData">
+          <img alt="{{item.alt}}" ng-src="{{item.src}}">
+        </div>
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <!--广告1-->
+    <ion-slide-box show-pager="true" auto-play="true" does-continue="true">
+      <ion-slide>
+        <img ng-src="img/home/home-ad-1.jpg" width="100%">
+      </ion-slide>
+      <ion-slide>
+        <img ng-src="img/home/home-ad-2.jpg" width="100%">
+      </ion-slide>
+      <ion-slide>
+        <img ng-src="img/home/home-ad-3.jpg" width="100%">
+      </ion-slide>
+    </ion-slide-box>
+  </ion-content>
 </ion-view>
