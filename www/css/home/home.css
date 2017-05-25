@@ -320,3 +320,11 @@
 #home-content .swiper-container{
   height:30%;
 }
+
+#home-content .row{
+  text-align: center;
+}
+#home-content .row img{
+  height:60%;
+  width: 60%;
+}
