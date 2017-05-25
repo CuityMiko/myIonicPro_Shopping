@@ -16,3 +16,11 @@
   5.对需要延迟加载src属性改成image-lazy-src，并加上该属性image-lazy-loader="lines"即在加载图片的时候图片所在位置有背景图
   6.在img标签上加载 image-lazy-distance-from-bottom-to-load="100" 该属性可以设置滚动条下拉到多大阈值的时候触发图片的延迟加载
 
+# 代码方式实现路由跳转
+  1、注入$state服务（ui-route提供的）
+  $state.go('路由名称')
+  2、指令方式实现页面跳转：
+  3、ui-sref="tab.category" 指向路由名称
+  4、a 标签的href方式进行页面跳转
+  5、修改地址栏url方式：$location.path("/tab/home");
+

@@ -2,7 +2,7 @@
  * 引导页控制器
  */
 angular.module('starter.controller.guidepage',['starter.service.guidepage'])
-  .controller('GuidePageCtrl',['$scope','$location',function($scope,$location){
+  .controller('GuidePageCtrl',['$scope','$location','$state',function($scope,$location,$state){
     //swiper引导页
     var mySwiper = new Swiper ('.swiper-container', {
       //direction: 'vertical', //纵向滚动，默认横向
@@ -18,5 +18,10 @@ angular.module('starter.controller.guidepage',['starter.service.guidepage'])
     //开始使用
     $scope.tostart=function(){
       $location.path("/tab/home");
+    }
+
+    //页面跳转的另一种实现
+    $scope.gohome=()=>{
+      $state.go('tab.home'); //路由名称
     }
   }])
