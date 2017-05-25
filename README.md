@@ -19,8 +19,10 @@
 # 代码方式实现路由跳转
   1、注入$state服务（ui-route提供的）
   $state.go('路由名称')
+  $state.go('路由名称',{name:'zhangsan'})
   2、指令方式实现页面跳转：
-  3、ui-sref="tab.category" 指向路由名称
+  3、ui-sref="tab.category" 指向路由名称 参数：ui-sref="tab.category({name:'zhangsan'})"
   4、a 标签的href方式进行页面跳转
   5、修改地址栏url方式：$location.path("/tab/home");
+  6、获取传参数：注入$stateParams,使用：$stateParams.参数名
 
