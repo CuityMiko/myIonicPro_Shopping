@@ -1,5 +1,5 @@
 angular.module('starter.controller.goodsList',['starter.service.goodsList'])
-  .controller('GoodsListCtrl',['$scope','GoodsListFcty',function($scope,GoodsListFcty){
+  .controller('GoodsListCtrl',['$scope','GoodsListFcty','$ionicLoading',function($scope,GoodsListFcty,$ionicLoading){
     // var flag=1;
     // var gdpromise= GoodsListFcty.getdata(flag);
     // gdpromise.then(
@@ -15,6 +15,10 @@ angular.module('starter.controller.goodsList',['starter.service.goodsList'])
     $scope.pageindex=1;
     $scope.isloadmore=false;
     var getpagedata=function(flag){
+      //显示遮罩层
+      $ionicLoading.show({
+        template:'数据加载中...'
+      })
       var gdpromise= GoodsListFcty.getpagedata($scope.pageindex);
       gdpromise.then((data)=>{
         if(data==null || data.length<=0){
@@ -35,6 +39,7 @@ angular.module('starter.controller.goodsList',['starter.service.goodsList'])
         }
         else
           $scope.$broadcast('scroll.infiniteScrollComplete');
+        $ionicLoading.hide();
      });
     }
     //ion-view刚刚加载完毕的时候

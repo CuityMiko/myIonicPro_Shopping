@@ -27,7 +27,7 @@ angular.module('starter.service.goodsList',[])
       },
       getpagedata:(pageindex)=>{
         var deferred=$q.defer();
-        var timer=1500;
+        var timer=2000;
         if(pageindex==1){
             timer=5000;
         }
